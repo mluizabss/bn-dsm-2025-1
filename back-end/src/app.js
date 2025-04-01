@@ -16,6 +16,10 @@ app.use('/', indexRouter)
 app.use('/users', usersRouter)
 
 /**************************ROTAS****************************/
-import categoriasRouter from '../routes/categorias,js'
+import categoriasRouter from './routes/categorias.js'
 app.use('/categorias', categoriasRouter)
+
+
+import fornecedoresRouter from './routes/fornecedores.js'
+app.use('/fornecedores', fornecedoresRouter)
 export default app
